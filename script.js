@@ -12,9 +12,9 @@ console.log(firstName);
 let javaScript = true;
 console.log(javaScript);
 
-console.log(typeof true);
+console.log(typeof true); // type of true
 console.log(typeof javaScript);
-console.log(typeof 'boolean');
+console.log(typeof 'boolean'); // type of boolean
 
 javaScript = 23;
 console.log(typeof javaScript);
@@ -23,7 +23,6 @@ let age = 30;
 age = 31;
 
 const birthYear = 1993;
-
 
 const ageEugen = 2021-1993;
 console.log (ageEugen);
@@ -35,7 +34,7 @@ const ageSarah = now - 2010;
 console.log (ageJonas / 2, ageSarah *3);
 
 let x = 10 + 6;
-x += 10;
+x += 10; // x = 10 + 6 + 10
 console.log(x);
 
 console.log (ageSarah >= 18);
