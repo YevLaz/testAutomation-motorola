@@ -1,14 +1,14 @@
 
 // Zadanie 1 - znalezienie minimalnego wsrod 3
 function min (a,b,c) {
-    if (a<b && a<c) {
-        return console.log (a)
+    if (a<=b && a<=c) {
+        return a
     }
-    if (b<a && b<c) {
-        return console.log (b)
+    if (b<=a && b<=c) {
+        return b
     }
-    if (c<b && c<a) {
-        return console.log (c)
+    if (c<=b && c<=a) {
+        return c
     }
     else {
         return console.log ('incorrect input')
@@ -21,19 +21,19 @@ function calc (a,b,c) {
 
         if (c == '*') {
             let result = a*b;
-            return console.log (result);
+            return result;
     }
         if (c == '/') {
             let result = a/b;
-            return console.log (result);
+            return result;
     }
         if (c == '+') {
             let result = a+b;
-            return console.log (result);
+            return result;
     }
         if (c == '-') { 
             let result = a-b;
-            return console.log (result);
+            return result;
     }
     else {
         return console.log ('incorrect input')
