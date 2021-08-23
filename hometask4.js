@@ -45,40 +45,9 @@ function operators(operator) {
 function numbers(operator1) {
     debugger;
     if (result > 0) {  
-        if (operator1 === '1'){
-            calculatorInput.value = calculatorInput.value + '1';  
-        }
-        if (operator1 === '2'){
-            calculatorInput.value = calculatorInput.value + '2';  
-        }
-        if (operator1 === '3'){
-            calculatorInput.value = calculatorInput.value + '3';  
-        }
-        if (operator1 === '4'){
-            calculatorInput.value = calculatorInput.value + '4';  
-        }
-        if (operator1 === '5'){
-            calculatorInput.value = calculatorInput.value + '5';  
-        }
-        if (operator1 === '6'){
-            calculatorInput.value = calculatorInput.value + '6';  
-        }
-        if (operator1 === '7'){
-            calculatorInput.value = calculatorInput.value + '7';  
-        }
-        if (operator1 === '8'){
-            calculatorInput.value = calculatorInput.value + '8';  
-        }
-        if (operator1 === '9'){
-            calculatorInput.value = calculatorInput.value + '9';  
-        }
-        if (operator1 === '0'){
-            calculatorInput.value = calculatorInput.value + '0';  
-        }
-    }
-
+            calculatorInput.value = calculatorInput.value + operator1;
+    }  
     else {
-
         if (operator1 === '1'){
             calculatorInput.value = calculatorInput.value + '1';  
         }
