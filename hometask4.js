@@ -4,7 +4,6 @@ let currentOperator = undefined;
 
 
 function operators(operator) {
-    debugger;
     let calculatorInput = document.getElementById('calculatorInput');
     if (currentOperator !== undefined) {
         if (currentOperator === '+'){
@@ -43,7 +42,6 @@ function operators(operator) {
 }
 
 function numbers(operator1) {
-    debugger;
     if (result > 0) {  
             calculatorInput.value = calculatorInput.value + operator1;
     }  
@@ -83,7 +81,6 @@ function numbers(operator1) {
 }
 
 function superoperator(superoperator1){
-    debugger;
     if (superoperator1 === 'CE') {
         calculatorInput.value = '';
     }
@@ -92,7 +89,7 @@ function superoperator(superoperator1){
         result = 0;
     }
     if (superoperator1 === 'backspase') {
-        calculatorInput.value = calculatorInput.value.substring(0, str.length - 1);
+        calculatorInput.value = calculatorInput.value.substring(0, calculatorInput.value.length - 1);
     }
 
 }
