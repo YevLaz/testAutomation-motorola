@@ -40,8 +40,7 @@ class Post {
         const clearBtn = document.createElement('button')
 
         clearBtn.value = this.index;
-        clearBtn.value1 = this.index;
-        // const clearBtn1 = +(clearBtn.value);
+
 
         mainP.innerText = this.message;
         bottomP.innerText = this.author + ' ' + this.date;
@@ -53,25 +52,25 @@ class Post {
         // console.log(this.index, clearBtn.value, clearBtn1);
         // console.log(typeof(this.index), typeof(clearBtn.value), typeof(clearBtn1));
 
+        clearBtn.addEventListener('click', () => {
+            // debugger;
+            for(let i=0; i< postList.length; i++) {
+                if (this.index == postList[i].index) {
+                    postList.splice(i, 1);
+                    return render();
+            }
+        }
+        })
+
         // clearBtn.addEventListener('click', () => {
         //     debugger;
-        //     for(let i=0; i< postList.length; i++) {
-        //         if (this.index = clearBtn.value) {
-        //             postList.splice(i, 1);
-        //             return render();
-        //     }
-        // }
+        //     let i = postList.findIndex(function(findI) {
+        //         return findI.index === +(clearBtn.value);
+        //     })
+        //     postList.splice(i,1);
+        //     i = undefined;
+        //     return render();
         // })
-
-        clearBtn.addEventListener('click', () => {
-            debugger;
-            let i = postList.findIndex(function(findI) {
-                return findI.index === +(clearBtn.value);
-            })
-            postList.splice(i,1);
-            i = undefined;
-            return render();
-        })
 
         return container;
         
