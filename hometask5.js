@@ -53,7 +53,6 @@ class Post {
         // console.log(typeof(this.index), typeof(clearBtn.value), typeof(clearBtn1));
 
         clearBtn.addEventListener('click', () => {
-            // debugger;
             for(let i=0; i< postList.length; i++) {
                 if (this.index == postList[i].index) {
                     postList.splice(i, 1);
@@ -62,8 +61,8 @@ class Post {
         }
         })
 
+// Alternative solution
         // clearBtn.addEventListener('click', () => {
-        //     debugger;
         //     let i = postList.findIndex(function(findI) {
         //         return findI.index === +(clearBtn.value);
         //     })
