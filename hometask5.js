@@ -12,17 +12,17 @@ btnSend.addEventListener('click', () => {
     const post = new Post(message, author);
     postList.push(post);
 
-    render();
+    // render();
 });
 //2
-function render() {
-    const contentElemnt = document.getElementById('content');
-    contentElemnt.innerHTML = '';
-    for(let i=0; i< postList.length; i++) {
-        const html = postList[i].generateHTML();
-        contentElemnt.appendChild(html);
-    }
-}
+// function render() {
+//     const contentElemnt = document.getElementById('content');
+//     contentElemnt.innerHTML = '';
+//     for(let i=0; i< postList.length; i++) {
+//         const html = postList[i].generateHTML();
+//         contentElemnt.appendChild(html);
+//     }
+// }
 
 // 3
 class Post {
