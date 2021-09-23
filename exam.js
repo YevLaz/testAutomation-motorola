@@ -9,17 +9,6 @@ function activePanel(index) {
 
 }
 
-function closeBrowser () {
-
-
-    const activePanel = document.getElementsByClassName('active')[0].id;
-
-
-    localStorage.setItem('session', activePanel);
-
-}
-
-
 
 // panel logowania ======================================================================================================================================
 
@@ -47,15 +36,6 @@ btnLoginJS.addEventListener('click', () => {
 
             logBtn.value = '';
             passBtn.value = '';
-
-
-            // const invoiceNumber = document.getElementById('invoiceNr');        
-            // const invoiceDescr = document.getElementById('invoiceDescr');
-            // const invoicePrice = document.getElementById('invoicePrice');
-
-            // invoiceNumber.value = '';
-            // invoiceDescr.value = '';
-            // invoicePrice.value = '';
 
             activePanel(2);
 
@@ -294,11 +274,21 @@ btnLogOutJS.addEventListener('click', () => {
 })
 
 
-// Session 
+// Session ==========================================================================================================================================
 
 if (localStorage.getItem('session') == 'panel2') {
     activePanel(1)
 } else if (localStorage.getItem('session') == 'panel3') {
     activePanel(2);
     render ();
+}
+
+function closeBrowser () {
+
+
+    const activePanel = document.getElementsByClassName('active')[0].id;
+
+
+    localStorage.setItem('session', activePanel);
+
 }
